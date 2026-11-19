@@ -1,0 +1,165 @@
+{
+  "synthetic": true,
+  "result": "passed",
+  "order_id": 1,
+  "currency": "RUB",
+  "total_minor": 20100,
+  "final_status": "completed",
+  "audit_events": 3,
+  "steps": [
+    {
+      "method": "GET",
+      "path": "/health",
+      "status": 200,
+      "response": {
+        "status": "ok",
+        "schema_revision": "0001"
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/customers",
+      "status": 201,
+      "response": {
+        "name": "Synthetic Demo Retail",
+        "email": "demo@example.com",
+        "id": 2
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/products",
+      "status": 201,
+      "response": {
+        "sku": "DEMO-E0E92B299631",
+        "name": "Synthetic cable",
+        "id": 3
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/orders",
+      "status": 201,
+      "response": {
+        "customer_id": 2,
+        "currency": "RUB",
+        "items": [
+          {
+            "product_id": 3,
+            "quantity": 2,
+            "price_minor": 10050
+          }
+        ],
+        "id": 1,
+        "status": "draft",
+        "created_at": "2026-11-19T17:58:20.194152+00:00",
+        "version": 1,
+        "total_minor": 20100
+      }
+    },
+    {
+      "method": "PATCH",
+      "path": "/orders/1/status",
+      "status": 200,
+      "response": {
+        "customer_id": 2,
+        "currency": "RUB",
+        "items": [
+          {
+            "product_id": 3,
+            "quantity": 2,
+            "price_minor": 10050
+          }
+        ],
+        "id": 1,
+        "status": "confirmed",
+        "created_at": "2026-11-19T17:58:20.194152+00:00",
+        "version": 2,
+        "total_minor": 20100
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/orders",
+      "status": 201,
+      "response": {
+        "customer_id": 2,
+        "currency": "RUB",
+        "items": [
+          {
+            "product_id": 3,
+            "quantity": 2,
+            "price_minor": 10050
+          }
+        ],
+        "id": 1,
+        "status": "draft",
+        "created_at": "2026-11-19T17:58:20.194152+00:00",
+        "version": 1,
+        "total_minor": 20100
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/orders",
+      "status": 409,
+      "response": {
+        "detail": "Idempotency-Key already used with a different request"
+      }
+    },
+    {
+      "method": "PATCH",
+      "path": "/orders/1/status",
+      "status": 409,
+      "response": {
+        "detail": "Stale version; reload the order"
+      }
+    },
+    {
+      "method": "PATCH",
+      "path": "/orders/1/status",
+      "status": 200,
+      "response": {
+        "customer_id": 2,
+        "currency": "RUB",
+        "items": [
+          {
+            "product_id": 3,
+            "quantity": 2,
+            "price_minor": 10050
+          }
+        ],
+        "id": 1,
+        "status": "completed",
+        "created_at": "2026-11-19T17:58:20.194152+00:00",
+        "version": 3,
+        "total_minor": 20100
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/orders/1/events",
+      "status": 200,
+      "response": [
+        {
+          "id": 1,
+          "order_id": 1,
+          "action": "created",
+          "timestamp": "2026-11-19T17:58:20.194152+00:00"
+        },
+        {
+          "id": 2,
+          "order_id": 1,
+          "action": "draft->confirmed",
+          "timestamp": "2026-11-19T17:58:20.212883+00:00"
+        },
+        {
+          "id": 3,
+          "order_id": 1,
+          "action": "confirmed->completed",
+          "timestamp": "2026-11-19T17:58:20.276103+00:00"
+        }
+      ]
+    }
+  ]
+}

@@ -4,6 +4,8 @@
 
 **Sheet Studio** is a working local CSV/XLSX sales cleanup and reconciliation demonstrator.
 [Before/after case study with Excel screenshots (Russian)](docs/case-study.md).
+
+Second working project: [Order Desk API with SQLite, migrations and audited orders](projects/api-db/README.en.md).
 All example companies and jobs are synthetic. This is a portfolio demonstration, with no client testimonials or commercial delivery claims.
 
 ## Install and run
@@ -39,7 +41,7 @@ Actual generated artifacts are in `demo-results/`.
 
 ## Repository
 
-`studio/` holds the engine, CLI, local web UI and offline job evaluator; `examples/` synthetic inputs; `tests/` pipeline, HTTP and scoring tests; `projects/` two planned project specifications; `docs/` studio workflow and source policy. CI is supplied in `.github/workflows/`.
+`studio/` holds spreadsheet processing, CLI, local web UI, offline job evaluator and Order Desk API; `examples/` synthetic inputs; `tests/` processing and API checks; `projects/` API documentation and the planned workflow specification; `docs/` studio workflow and source policy. CI is supplied in `.github/workflows/`.
 
 ## Limits
 
@@ -50,4 +52,5 @@ Blank rows are skipped; issue row numbers refer to nonblank record positions plu
 Use a separate output directory; generated filenames overwrite previous reports.
 The job evaluator accepts only authorized manual exports, provides transparent heuristic scores, never accesses remote pages and never submits proposals. See `docs/job-scout.md`.
 
-The source repository is published on GitHub. Next: record a demo video using the case study, implement the API/database design, then the human-approved workflow. Neither additional project is implemented yet.
+The source repository is published on GitHub. Next: demonstrate the spreadsheet and order API projects, then implement the human-approved workflow.
+Order Desk API is now implemented locally; the workflow project remains a specification. Install `python -m pip install -e ".[api,test]"` in your environment before running the full test suite. For spreadsheet-only tests: `python -m unittest discover -s tests -p test_studio.py -v`.
