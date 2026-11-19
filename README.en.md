@@ -3,6 +3,7 @@
 [Русский](README.md)
 
 **Sheet Studio** is a working local CSV/XLSX sales cleanup and reconciliation demonstrator.
+[Before/after case study with Excel screenshots (Russian)](docs/case-study.md).
 All example companies and jobs are synthetic. This is a portfolio demonstration, with no client testimonials or commercial delivery claims.
 
 ## Install and run
@@ -18,7 +19,7 @@ py -m venv .venv
 .venv/Scripts/python.exe -m studio.scout examples/jobs.json --output reports/jobs-ranked.json
 ```
 
-The environment in this delivered workspace is already installed; start with the CLI command.
+On a fresh checkout, run all installation commands. If the environment is already installed, start with the CLI command.
 On Linux/macOS use `python3 -m venv .venv` and `.venv/bin/python` instead.
 Open http://127.0.0.1:8765, upload orders and catalog, download the ZIP. Ctrl+C stops the server.
 Installed console entry points: `sheet-studio` and `job-scout`.
@@ -49,4 +50,4 @@ Blank rows are skipped; issue row numbers refer to nonblank record positions plu
 Use a separate output directory; generated filenames overwrite previous reports.
 The job evaluator accepts only authorized manual exports, provides transparent heuristic scores, never accesses remote pages and never submits proposals. See `docs/job-scout.md`.
 
-Next: record a demo, publish to an owner-selected repository, implement the API/database design, then the human-approved workflow. Neither additional project is implemented yet.
+The source repository is published on GitHub. Next: record a demo video using the case study, implement the API/database design, then the human-approved workflow. Neither additional project is implemented yet.
