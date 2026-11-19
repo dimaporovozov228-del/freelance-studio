@@ -1,0 +1,72 @@
+[
+  {
+    "id": "demo-1",
+    "source": "synthetic",
+    "source_type": "manual_export",
+    "permission_note": "Author-generated synthetic example",
+    "title": "Python Excel cleanup",
+    "description": "Clean CSV sales data and generate Excel reports with Python automation.",
+    "url": "",
+    "score": 80,
+    "matched_skills": [
+      "automation",
+      "csv",
+      "excel",
+      "python"
+    ],
+    "risk_flags": [],
+    "decision": "manual_review",
+    "questions": [
+      "What are acceptance criteria?",
+      "Can you provide anonymized sample data?"
+    ],
+    "outreach_sent": false
+  },
+  {
+    "id": "demo-2",
+    "source": "synthetic",
+    "source_type": "manual_export",
+    "permission_note": "Author-generated synthetic example",
+    "title": "API SQLite integration",
+    "description": "Build a Python API with SQLite and tests.",
+    "url": "",
+    "score": 60,
+    "matched_skills": [
+      "api",
+      "python",
+      "sqlite"
+    ],
+    "risk_flags": [],
+    "decision": "manual_review",
+    "questions": [
+      "What are acceptance criteria?",
+      "Can you provide anonymized sample data?"
+    ],
+    "outreach_sent": false
+  },
+  {
+    "id": "demo-3",
+    "source": "synthetic",
+    "source_type": "manual_export",
+    "permission_note": "Author-generated synthetic example",
+    "title": "Unlimited scraping",
+    "description": "Python scraping and captcha bypass, unlimited delivery.",
+    "url": "",
+    "score": 0,
+    "matched_skills": [
+      "api",
+      "python"
+    ],
+    "risk_flags": [
+      "captcha",
+      "scraping",
+      "unlimited"
+    ],
+    "decision": "manual_review",
+    "questions": [
+      "What are acceptance criteria?",
+      "Can you provide anonymized sample data?"
+    ],
+    "outreach_sent": false
+  }
+]

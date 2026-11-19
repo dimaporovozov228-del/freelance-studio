@@ -1,0 +1,9 @@
+{
+  "input_rows": 7,
+  "accepted_rows": 4,
+  "rejected_rows": 3,
+  "matched_rows": 3,
+  "unmatched_rows": 1,
+  "total_amount": "3851.00",
+  "currency": "unspecified; use one currency per input"
+}

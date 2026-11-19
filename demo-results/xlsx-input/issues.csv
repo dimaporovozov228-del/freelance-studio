@@ -1,0 +1,5 @@
+﻿row,order_id,reason
+3,ORD-001,Duplicate order_id + SKU; first valid row retained
+5,ORD-003,SKU not found in catalog
+6,ORD-004,Quantity must be a positive integer
+7,ORD-005,Price must be non-negative with at most two decimals

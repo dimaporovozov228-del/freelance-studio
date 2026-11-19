@@ -1,0 +1,8 @@
+order_id,sku,customer,quantity,unit_price
+ ORD-001 , abc-01 , Example Retail ,2,100.50
+ORD-001,ABC-01,Example Retail,2,100.50
+ORD-002,xyz-02,Demo Wholesale,3,"1 200,00"
+ORD-003,MISSING,Synthetic Shop,1,50
+ORD-004,ABC-01,Example Retail,-1,100
+ORD-005,ABC-01,Synthetic Shop,2,invalid
+ORD-006,ABC-01,Demo Wholesale,1,0

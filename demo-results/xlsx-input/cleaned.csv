@@ -1,0 +1,5 @@
+﻿order_id,sku,customer,quantity,unit_price,product,total,match_status
+ORD-001,ABC-01,Example Retail,2,100.50,Demo cable,201.00,matched
+ORD-002,XYZ-02,Demo Wholesale,3,1200.00,Synthetic adapter,3600.00,matched
+ORD-003,MISSING,Synthetic Shop,1,50.00,,50.00,unmatched
+ORD-006,ABC-01,Demo Wholesale,1,0.00,Demo cable,0.00,matched

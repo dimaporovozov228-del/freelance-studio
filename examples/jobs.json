@@ -1,0 +1,5 @@
+[
+  {"id":"demo-1","source":"synthetic","source_type":"manual_export","permission_note":"Author-generated synthetic example","title":"Python Excel cleanup","description":"Clean CSV sales data and generate Excel reports with Python automation.","url":""},
+  {"id":"demo-2","source":"synthetic","source_type":"manual_export","permission_note":"Author-generated synthetic example","title":"API SQLite integration","description":"Build a Python API with SQLite and tests.","url":""},
+  {"id":"demo-3","source":"synthetic","source_type":"manual_export","permission_note":"Author-generated synthetic example","title":"Unlimited scraping","description":"Python scraping and captcha bypass, unlimited delivery.","url":""}
+]

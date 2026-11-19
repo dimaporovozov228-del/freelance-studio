@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "freelance-studio-demo"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["openpyxl>=3.1.5,<4"]
+
+[project.scripts]
+sheet-studio = "studio.cli:main"
+job-scout = "studio.scout:main"
+
+[tool.setuptools.packages.find]
+include = ["studio*"]

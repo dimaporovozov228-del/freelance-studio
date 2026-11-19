@@ -1,0 +1,19 @@
+test_bad_schema_duplicate_catalog_and_empty (test_studio.PipelineTests.test_bad_schema_duplicate_catalog_and_empty) ... ok
+test_demo_totals_and_rejections (test_studio.PipelineTests.test_demo_totals_and_rejections) ... ok
+test_export_workbook_and_csv (test_studio.PipelineTests.test_export_workbook_and_csv) ... ok
+test_formula_escaping (test_studio.PipelineTests.test_formula_escaping) ... ok
+test_invalid_money (test_studio.PipelineTests.test_invalid_money) ... ok
+test_xlsx_input (test_studio.PipelineTests.test_xlsx_input) ... ok
+test_ranking_and_deduplication (test_studio.ScoutTests.test_ranking_and_deduplication) ... ok
+test_source_gate (test_studio.ScoutTests.test_source_gate) ... ok
+test_http_upload_zip_and_auth (test_studio.WebTests.test_http_upload_zip_and_auth) ... 127.0.0.1 - - [19/Nov/2026 20:04:08] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Nov/2026 20:04:08] "POST /run HTTP/1.1" 200 -
+127.0.0.1 - - [19/Nov/2026 20:04:08] "POST /run HTTP/1.1" 403 -
+ok
+test_idle_browser_connection_does_not_block_page (test_studio.WebTests.test_idle_browser_connection_does_not_block_page) ... 127.0.0.1 - - [19/Nov/2026 20:04:08] "GET / HTTP/1.1" 200 -
+ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.115s
+
+OK
