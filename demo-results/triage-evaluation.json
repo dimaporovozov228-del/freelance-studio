@@ -1,0 +1,138 @@
+{
+  "engine": "rules-v1",
+  "dataset": "triage-evaluation.json",
+  "synthetic": true,
+  "samples": 20,
+  "correct": 16,
+  "accuracy": 0.8,
+  "confusion_matrix": {
+    "billing": {
+      "billing": 4,
+      "support": 0,
+      "sales": 0,
+      "unknown": 1
+    },
+    "support": {
+      "billing": 0,
+      "support": 4,
+      "sales": 0,
+      "unknown": 1
+    },
+    "sales": {
+      "billing": 0,
+      "support": 0,
+      "sales": 4,
+      "unknown": 2
+    },
+    "unknown": {
+      "billing": 0,
+      "support": 0,
+      "sales": 0,
+      "unknown": 4
+    }
+  },
+  "manual_review_count": 8,
+  "limitations": "Small author-labelled synthetic set, not independent validation or client accuracy. Confidence scores are not calibrated probabilities.",
+  "results": [
+    {
+      "id": "E01",
+      "expected": "billing",
+      "predicted": "billing"
+    },
+    {
+      "id": "E02",
+      "expected": "billing",
+      "predicted": "billing"
+    },
+    {
+      "id": "E03",
+      "expected": "billing",
+      "predicted": "billing"
+    },
+    {
+      "id": "E04",
+      "expected": "billing",
+      "predicted": "billing"
+    },
+    {
+      "id": "E05",
+      "expected": "support",
+      "predicted": "support"
+    },
+    {
+      "id": "E06",
+      "expected": "support",
+      "predicted": "support"
+    },
+    {
+      "id": "E07",
+      "expected": "support",
+      "predicted": "support"
+    },
+    {
+      "id": "E08",
+      "expected": "support",
+      "predicted": "support"
+    },
+    {
+      "id": "E09",
+      "expected": "sales",
+      "predicted": "sales"
+    },
+    {
+      "id": "E10",
+      "expected": "sales",
+      "predicted": "sales"
+    },
+    {
+      "id": "E11",
+      "expected": "sales",
+      "predicted": "sales"
+    },
+    {
+      "id": "E12",
+      "expected": "sales",
+      "predicted": "sales"
+    },
+    {
+      "id": "E13",
+      "expected": "unknown",
+      "predicted": "unknown"
+    },
+    {
+      "id": "E14",
+      "expected": "unknown",
+      "predicted": "unknown"
+    },
+    {
+      "id": "E15",
+      "expected": "unknown",
+      "predicted": "unknown"
+    },
+    {
+      "id": "E16",
+      "expected": "unknown",
+      "predicted": "unknown"
+    },
+    {
+      "id": "E17",
+      "expected": "billing",
+      "predicted": "unknown"
+    },
+    {
+      "id": "E18",
+      "expected": "support",
+      "predicted": "unknown"
+    },
+    {
+      "id": "E19",
+      "expected": "sales",
+      "predicted": "unknown"
+    },
+    {
+      "id": "E20",
+      "expected": "sales",
+      "predicted": "unknown"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+source,external_id,body,received_at
+synthetic-csv,CSV-01,Please send an invoice to demo@example.com,2026-11-19T10:00:00Z
+synthetic-csv,CSV-02,Срочно: приложение не работает,2026-11-19T10:01:00Z
+synthetic-csv,CSV-03,Хочу купить услугу,2026-11-19T10:02:00Z
